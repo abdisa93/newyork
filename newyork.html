@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="newyork.css">
+
+    <style>
+        body {
+            width: 990px;
+            margin: auto;
+            overflow: auto;
+            font-family: sans-serif;
+        }
+
+        /*Comment:  This selector is targeting the <nav> element */
+
+        nav {
+            width: 100%;
+            text-align: center;
+            background: #fdfdfd;
+        }
+
+        /*This selector is targeting the <ul> element within the <nav> element*/
+        /*This ensures that any other lists on the page are not impacted by this*/
+
+        nav ul {
+            float: right;
+            display: inline-block;
+            /*Comment:  this tells the browser to display the ul element inline (side by side), but it allows the list to retain it's block-level characteristics - more on that later.*/
+            margin: 0px;
+            /*Comment: zero pixels of space in the margin (the space around an element.*/
+            padding: 0px;
+            /*Comment: zero pixels of space between the element's border and its content*/
+        }
+
+        /*This selector is targeting the <li> elements that are within the <nav> element*/
+
+        nav li {
+            float: left;
+            list-style-type: none;
+            /*Comment:  this tells the browser to remove the bullet points that would normally be displayed in an unordered list.*/
+        }
+
+        /*This selector is targeting the links.  These are the <a> elements that are within the within the <nav> element */
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            /*Comment:  this tells the browser to remove the underline that is normally displayed under a link.*/
+            display: block;
+            /*the <a> tags are inline but in this case we need to be able to set a width so let's make them appear as block level*/
+            width: 100px;
+            padding: 8px 0px;
+        }
+
+        /*This selector targets the "hover" pseudo-class of the <a> element.  This css style will be activated when the mouse moves over the link.*/
+        nav a:hover {
+            background-color: rgb(248, 250, 248);
+            color: rgb(7, 7, 7);
+        }
+
+        /*This selector is targeting footer */
+        footer {
+            background-color: black;
+            color: rgb(248, 244, 244);
+            width: 990px;
+        }
+    </style>
+
+
+ <!-- load jQuery and the plugin -->
+ <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+ <script src="bjqs-1.3.min.js"></script>
+ <!-- Here are the style sheets -->
+ <link type="text/css" rel="Stylesheet" href="bjqs.css" />
+ <link rel="stylesheet" href="demo.css">
+ <!-- IMPORTANT:  Put your CSS after this line -->
+
+
+</head>
+<img style="float: left; width: 300px;" src="images/vny-logo.png">
+
+<body>
+
+
+
+
+
+    <nav>
+        <ul>
+            <li><a
+                    href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&city_id=800049480">All
+                    New York Hotels</a></li>
+            <li><a href="https://secure.rezserver.com/car_rentals/home/?refid=7924&refclickid=newyorkcity">Car
+                    Rentals</a></li>
+            <li><a href="https://secure.rezserver.com/flights/home/?refid=7924&refclickid=newyorkcity">Flights</a></li>
+            <li><a
+                    href="https://secure.rezserver.com/packages?air_search_type=roundtrip&refid=7924&refclickid=newyorkcity">Vacations</a>
+            </li>
+
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+
+
+    <div id="banner-fade">
+
+        <ul class="bjqs">
+          <li><img src="images/new-york-city-skyline-h.jpeg"></li>
+          <li><img src="images/9_11-memorial-nightime-h.jpg"></li>
+          <li><img src="images/nyc-rockefeller-center-flags-h.jpg"></li>
+        </ul>
+       
+        </div>
+       
+        <script class="secret-source">
+        jQuery(document).ready(function($) {
+       $('#banner-fade').bjqs({
+        height : 600,
+        width : 990,
+        responsive : true
+        });
+       });
+        </script>
+
+
+
+
+
+
+
+
+
+    <div style="background-color: #000; color: white;">
+        <h1 style="text-align: center;">Come and Dream in the City That Never Sleeps</h1>
+
+        <p style="text-size-adjust: 200px;">
+
+            The City that Never Sleeps is a city that needs no introduction, of course. The Statue of Liberty has not
+            moved, Central Park still stretches from 59th street to 110th Street (between Fifth and Eighth Avenues), and
+            the Museum of Natural History still stands more or less across the park from the Guggenheim Museum and the
+            Metropolitan Museum of Art, in Upper West and Upper East sides respectively, and the Empire State Building
+            is still there, towering over Fifth Avenue at 34th Street.
+
+
+        </p>
+
+
+        <h1 style="text-align: center;">MORE ABOUT NEW YORK CITY</h1>
+
+
+        <h1 style="text-align: center;"> Editors Hotel Picks
+
+        </h1>
+
+        <section style="margin-right: 15px; margin-left: 30px; padding-right: 15px; display: inline-block;">
+
+            <div style="display: inline-block; margin: auto; padding: 12px; text-align: center;">
+
+                <article style="float: left; width:280px; height: 180px; margin: auto;">
+                    <img src="images/Millennium-Hilton-New-York-Downtown-300x169.jpg" alt="">
+
+                    <a href="https://secure.rezserver.com/hotels/hotel/?refid=7924&hotel_id=700012884&refclickid=newyorkcity"
+                        style="text-decoration:none;">MILLENNIUM HILTON</a>
+                </article>
+            </div>
+
+
+            <div style="display: inline-block; margin: auto; padding: 12px; text-align: center;">
+
+                <article style="float:left; width:280px; height: 180px; margin: auto;">
+                    <img src="images/Marriott-Marquis-new-york-300x169.jpg" alt="">
+
+                    <a href="https://secure.rezserver.com/hotels/hotel/?hotel_id=700011569&refclickid=newyorkcity&refid=7924"
+                        style="text-decoration:none;">MARRIOTT MARQUIS TIMES SQUARE</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 12px; text-align: center;">
+
+                <article style="float:left; width:280px; height: 180px; margin: auto;">
+                    <img src="images/Hyatt-Regency-Jersey-City-300x169.jpg" alt="">
+
+                    <a href="https://secure.rezserver.com/hotels/hotel/?hotel_id=700209281&refclickid=newyorkcity&refid=7924"
+                        style="text-decoration:none;">HYATT REGENCY JERSEY CITY</a>
+                </article>
+            </div>
+
+
+            <br>
+
+            <br>
+
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div style="background-image: url(https://visitnewyork.com/wp-content/uploads/2019/04/nyc-map.jpg);">
+
+        <h1 style="text-align: center;"> Find a Hotel in New York City</h1>
+
+        <section style="margin-right: 15px; margin-left: 30px; padding-right: 15px; display: inline-block;">
+
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float: left; width:291px; height: 70px; background-color: white; margin: auto;">
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.7099&longitude=-74.0128&radius=5&poi_name=Downtown%20-%20Wall%20Street&neighborhood=6835&page=1"
+                        style="text-decoration:none; color: #000;">DOWNTOWN/WALL
+                        STREET</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.7374&longitude=-74.0337&radius=5&poi_name=Jersey%20City%20-%20Hoboken&neighborhood=5478&page=1"
+                        style="text-decoration:none; color: #000;">JERSEY
+                        CITY / HOBOKEN</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.6706&longitude=-73.7940&radius=5&poi_name=Kennedy%20Airport%20-%20JFK&neighborhood=5705&page=1"
+                        style="text-decoration:none; color: #000;">KENNEDY
+                        AIRPORT (JFK)</a>
+                </article>
+            </div>
+        </section>
+
+        <section style="margin-right: 15px; margin-left: 30px; padding-right: 15px; display: inline-block;">
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float: left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.6706&longitude=-73.7940&radius=5&poi_name=Kennedy%20Airport%20-%20JFK&neighborhood=5705&page=1"
+                        style="text-decoration:none; color: #000;">LAGUARDIA
+                        AIRPORT</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.7575&longitude=-73.9709&radius=5&poi_name=Midtown%20East&neighborhood=5581&page=1"
+                        style="text-decoration:none; color: #000;">MIDTOWN
+                        EAST</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.7626&longitude=-73.9945&radius=5&poi_name=Midtown%20West&neighborhood=5580&page=1"
+                        style="text-decoration:none; color: #000;">MIDTOWN
+                        WEST</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.7216&longitude=-74.0066&radius=5&poi_name=Soho%20-%20Tribeca&neighborhood=6836&page=1"
+                        style="text-decoration:none; color: #000;">SOHO
+                        TRIBECA</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.6934&longitude=-74.1813&radius=5&poi_name=Newark%20NJ%20-%20Meadowlands"
+                        style="text-decoration:none; color: #000;">THE
+                        MEADOWLANDS</a>
+                </article>
+            </div>
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.7593&longitude=-73.9863&radius=5&poi_name=Times%20Square%20Theatre%20District&neighborhood=6267&page=1"
+                        style="text-decoration:none; color: #000;">THEATER
+                        DISTRICT TIMES SQUARE</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.7727&longitude=-73.9566&radius=5&poi_name=Upper%20East%20Side&neighborhood=5074&page=1"
+                        style="text-decoration:none; color: #000;">UPPER
+                        EAST SIDE</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&latitude=40.7881&longitude=-73.9787&radius=5&poi_name=Upper%20West%20Side&neighborhood=5579&page=1"
+                        style="text-decoration:none; color: #000;">UPPER
+                        WEST SIDE</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 1px; text-align: center;">
+
+                <article style="float:left; width:291px; height: 70px; background-color: white; margin: auto;">
+
+                    <a href="https://secure.rezserver.com/hotels/results/?refid=7924&refclickid=newyorkcity&city_id=800049480"
+                        style="text-decoration:none; color: #000;">ALL
+                        HOTELS</a>
+                </article>
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+
+        <p style="text-align: center; padding: 1px; margin: auto;  height: 25px; width: 200px;">
+            ARE YOU PAYING TOO MUCH?</p>
+
+
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <section style="margin-right: 15px; margin-left: 30px; padding-right: 15px; display: inline-block;">
+
+        <h1 style="text-align: center;">Things to Do in New York City</h1>
+
+        <div style="display: inline-block; margin: auto; padding: 5px; text-align: center;">
+
+            <article style="float: left; width:291px; height: 150px; background-color: #ccc; margin: auto;">
+                <img src="images/statue-of-liberty-300x169.jpg">
+                <a href="https://www.nycgo.com/articles/guide-to-the-statue-of-liberty/"
+                    style="text-decoration:none; color: #000;">STATUE OF LIBERTY</a>
+
+
+            </article>
+        </div>
+
+        <div style="display: inline-block; margin: auto; padding: 5px; text-align: center;">
+
+            <article style="float:left; width:291px; height: 150px; background-color: #ccc; margin: auto;">
+
+                <img src="images/hudson-yards-new-york-1-300x169.jpg">
+                <a href="https://www.nycgo.com/articles/things-to-do-in-hudson-yards/"
+                    style="text-decoration:none; color: #000;">HUDSON YARDS</a>
+
+            </article>
+        </div>
+
+        <div style="display: inline-block; margin: auto; padding: 5px; text-align: center;">
+
+            <article style="float:left; width:291px; height: 150px; background-color: #ccc; margin: auto;">
+
+                <img src="images/nyc-educational-tours-300x169.jpg">
+                <a href="https://visitnewyork.com/educational-tours/"
+                    style="text-decoration:none; color: #000;">EDUCATIONAL TOURS
+                </a>
+
+            </article>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <section style="margin-right: 15px; margin-left: 30px; padding-right: 15px; display: inline-block;">
+        <div style="display: inline-block; margin: auto; padding: 5px; text-align: center;">
+
+            <article style="float: left; width:291px; height: 150px; background-color: #ccc; margin: auto;">
+
+                <img src="images/9-11-memorial-museum-fire-engine-300x169.jpg">
+                <a href="https://www.nycgo.com/things-to-do/museums-galleries/"
+                    style="text-decoration:none; color: #000;">MUSEUMS & GALLERIES</a>
+
+            </article>
+        </div>
+
+        <div style="display: inline-block; margin: auto; padding: 5px; text-align: center;">
+            <article style="float:left; width:291px; height: 150px; background-color: #ccc; margin: auto;">
+
+                <img src="images/Disneys-Broadway-Lion-King-300x169.jpg">
+                <a href="https://www.nycgo.com/broadway-show-tickets-nyc/"
+                    style="text-decoration:none; color: #000;">ACTIVITIES</a>
+
+            </article>
+        </div>
+
+        <div style="display: inline-block; margin: auto; padding: 5px; text-align: center;">
+
+            <article style="float:left; width:291px; height: 150px; background-color: #ccc; margin: auto;">
+
+                <img src="images/Space-Shuttle-Pavilion-300x169.jpg">
+                <a href="https://www.nycgo.com/things-to-do/attractions/"
+                    style="text-decoration:none; color: #000;">ATTRACTIONS</a>
+
+            </article>
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section style="margin-right: 15px; margin-left: 30px; padding-right: 15px; display: inline-block;">
+        <div style="display: inline-block; margin: auto; padding: 5px; text-align: center;">
+            <article style="float: left; width:291px; height: 150px; background-color: #ccc; margin: auto;">
+
+                <img src="images/one-world-observatory-300x169.jpg">
+                <a href="https://www.oneworldobservatory.com/experience/" style="text-decoration:none; color: #000;">ONE
+                    WORLD OBSERVATORY</a>
+
+            </article>
+        </div>
+
+        <div style="display: inline-block; margin: auto; padding: 5px; text-align: center;">
+            <article style="float:left; width:291px; height: 150px; background-color: #ccc; margin: auto;">
+
+                <img src="images/9-11-memorial-museum-fire-engine-300x169.jpg">
+                <a href="https://www.nycgo.com/museums-galleries/9-11-memorial-museum/"
+                    style="text-decoration:none; color: #000;">9/11 MEMORIAL & MUSEUM</a>
+
+            </article>
+        </div>
+
+        <div style="display: inline-block; margin: auto; padding: 5px; text-align: center;">
+            <article style="float:left; width:291px; height: 150px; background-color: #ccc; margin: auto;">
+
+                <img src="images/nyc-night-life-300x169.jpg">
+                <a href="https://www.nycgo.com/things-to-do/nightlife/?genres=dancing-nightclub&open="
+                    style="text-decoration:none; color: #000;">NIGHTLIFE</a>
+
+            </article>
+
+            
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    
+
+
+    <div style="background-color: #e5e5e5;">
+
+        <h1 style="text-align: center;">More New York City Visitor Information</h1>
+
+        <section style="margin-right: 30px; margin-left: 30px; padding-right: 15px; display: inline-block;">
+
+            <div style="display: inline-block; margin: auto; padding: 20px; text-align: center;">
+
+                <article style="float: left; width:396px; height: 50px; background-color:white; margin: auto;">
+
+                    <a href="https://www.nycgo.com/plan-your-trip/basic-information"
+                        style="text-decoration:none; color: #000;">BASIC INFORMATION</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 20px; text-align: center;">
+
+                <article style="float:left; width:396px; height: 50px; background-color:white; margin: auto;">
+
+                    <a style="color: red; text-decoration: none;"
+                        href="https://www.citypass.com/new-york-comparison">CityPASS</a>
+                </article>
+            </div>
+
+        </section>
+
+        
+
+        <section style="margin-right: 30px; margin-left: 30px; padding-right: 15px; display: inline-block;">
+
+            <div style="display: inline-block; margin: auto; padding: 20px; text-align: center;">
+
+                <article style="float: left; width:396px; height: 50px; background-color:white; margin: auto;">
+
+                    <a href="https://www.nycgo.com/maps-guides" style="text-decoration:none; color: #000;">MAPS &
+                        GUIDES</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 20px; text-align: center;">
+
+                <article style="float:left; width:396px; height: 50px; background-color: white; margin: auto;">
+
+                    <a href="https://www.nycgo.com/plan-your-trip/basic-information/official-nyc-information-centers"
+                        style="text-decoration:none; color: #000;">INFORMATION
+                        CENTERS</a>
+                </article>
+            </div>
+
+        </section>
+
+
+
+        
+
+        <section style="margin-right: 30px; margin-left: 30px; padding-right: 15px; display: inline-block;">
+
+            <div style="display: inline-block; margin: auto; padding: 20px; text-align: center;">
+
+                <article style="float: left; width:396px; height: 50px; background-color:white; margin: auto;">
+
+                    <a href="https://www.nycgo.com/articles/nyc-weather/" style="text-decoration:none; color: #000;">NYC
+                        WEATHER</a>
+                </article>
+            </div>
+
+            <div style="display: inline-block; margin: auto; padding: 20px; text-align: center;">
+
+                <article style="float:left; width:396px; height: 50px; background-color: white; margin: auto;">
+
+                    <a href="https://www.nycgo.com/plan-your-trip/basic-information/transportation-in-nyc"
+                        style="text-decoration:none; color: #000;">TRANSPORTATION</a>
+                </article>
+
+                
+            </div>
+
+
+            <form
+            style="border:solid #ff0000 2px; padding: 5px; color: white; text-align: left; float: right; width: 450px; background-image:url(https://livingtinywithawolf.com/wp-content/uploads/2021/04/Best-Sedona-Hikes-1.jpeg);">
+            <fieldset>
+                <legend>Please tell us about yourself:</legend>
+    
+                <div style="width: 140px; padding: 5px; margin: 20px; float: left;">
+                    <label for="fname">First
+                        Name</label><br>
+                    <input type="text field" id="fname" name="fname" maxlength="4">
+                    <br>
+                    <br>
+                    <label for="theiraddress">Address</label><br>
+                    <input type="textarea" id="theiraddress">
+    
+                    <p>Gender:</p>
+    
+    
+                    <input type="radio" id="Male" name="drone" value="Male">
+                    <label for="Male">Male</label> <br>
+    
+                    <input type="radio" id="dewey" name="drone" value="Women">
+                    <label for="dewey">Women</label><br>
+    
+                    <input type="radio" id="louie" name="drone" value="Others">
+                    <label for="louie">Others</label>
+
+    
+                </div>
+    
+                <div style="width: 141px; padding: 5px; margin: 20px; float: left;">
+                    <label for="team">Favorite Sports Team in Arizona:</label>
+                    <input list="teams" name="team" id="team">
+    
+    
+                </div>
+                <div style="width: 141px; padding: 5px; margin: 20px; float: left;">
+                    <label for="birthday">Birth Date:</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <br>
+                    
+                    <label for="quantity">Credit Card:</label>
+                    <input type="number" id="quantity" name="quantity" min="0000" max="9999"><br>
+                    <br>
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="pwd"><br>
+    
+
+                    <input type="submit" onclick="alert('Thank you!');" value="Submit">
+    
+                    <input type="reset">
+
+                </div>
+            </fieldset>
+        </form>
+<br>
+
+    
+
+                <iframe width="400" height="290" src="https://www.youtube.com/embed/MtCMtC50gwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+        </section>
+<br>
+<br>
+<br>
+
+<div>
+
+<iframe style="width:400px; height: 400px;"
+   src="https://www.visitwashington.com/" name="magicWindow">
+</iframe>
+
+</div>
+<br>
+<br>
+
+        <footer>
+            <div>
+                <section
+                    style="overflow: auto; margin:auto; width: auto;  height: 400px; padding: 0px 8px; border: solid 2px #000; color: white; background-color: black;">
+
+                    <h2 style="text-align: center; color: #ccc;">Other Associated Visitors Bureaus Sites</h2>
+
+
+                    <a style="padding: 20px;" href="https://visitnewyork.com/">VisitNewYork.com</a>
+
+
+
+                    <a style="padding: 20px;" href="https://visitboston.com/">visitboston.com/</a>
+
+
+                    <a style="padding: 20px;" href="https://www.visitwashington.com/">visitwashington.com/</a>
+
+
+                    <a style="padding: 20px;" href="https://visitchicago.net/">https://visitchicago.net/</a>
+
+                    <a style="padding: 20px;" href="https://visitquebec.com/">https://visitquebec.com//</a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+
+
+
+                    <a style="padding: 20px;" href="https://visitmiami.com/">https://visitmiami.com/</a>
+
+
+                    <a style="padding: 20px;" href="https://visitkeywest.com/">https://visitkeywest.com//</a>
+
+
+                    <a style="padding: 20px;" href="https://visitsanfrancisco.net/">https://visitsanfrancisco.net/</a>
+
+
+                    <a style="padding: 20px;" href="https://visitlosangeles.la/">https://visitlosangeles.la/</a>
+                    <br>
+                    <br>
+
+                    <a style="padding: 20px;"
+                        href="https://associatedvisitorsbureaus.com//">https://associatedvisitorsbureaus.com//</a>
+
+                    <br>
+                    <br>
+
+                    <a href="https://visitnewyork.com/contact-us/"
+                        style=" float: right; margin-right: 430px; color: #ccc;">ADVERTISE ON US</a>
+                    <br>
+                    <br>
+
+                    <p style="text-align: center;">©2022 Visit New York. All Rights Reserved. Affiliate of the
+                        Associated
+                        Visitors Bureaus.</p>
+
+                </section>
+            </div>
+
+        </footer>
+
+</body>
+
+</html>
